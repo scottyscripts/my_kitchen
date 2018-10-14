@@ -10,14 +10,16 @@
   <%= @item.expiration_date %>
 </p>
 
-<p>
-  <strong>Item type:</strong>
-  <%= @item.item_type %>
-</p>
+<% if @item.item_type %>
+  <p>
+    <strong>Item type:</strong>
+    <%= @item.item_type %>
+  </p>
+<% end %>
 
 <p>
   <strong>User:</strong>
-  <%= @item.user %>
+  <%= @item.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
