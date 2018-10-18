@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+div.alert {
+  margin-bottom: 0;
+}
