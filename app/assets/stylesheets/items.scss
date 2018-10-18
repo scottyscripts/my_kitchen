@@ -1,3 +1,36 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div {
+  font-size: 110%;
+}
+
+div.item-row div:first-child {
+  font-size: 130%;
+  border-right: 2px solid black;
+  min-width: 40%;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+div.item-row {
+  display: inline-flex;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+div.item-row div {
+  min-width: 33%;
+  flex-grow: 1;
+}
+
+div.action-row {
+  display: none;
+  width: 100%;
+  margin: 10px 0 30px 0;
+}
+div.action-row div {
+  min-width: 33%;
+  flex-grow: 1;
+  text-align: center;
+}
