@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :item_type_id %>
+    <%= collection_select(:item, :item_type_id, ItemType.all, :id, :name, include_blank: true) %>
+  </div>
+
+  <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
@@ -19,11 +24,6 @@
   <div class="field">
     <%= form.label :expiration_date %>
     <%= form.date_select :expiration_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :item_type_id %>
-    <%= form.text_field :item_type_id %>
   </div>
 
   <div class="actions">
