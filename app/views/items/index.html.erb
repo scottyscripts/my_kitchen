@@ -1,11 +1,10 @@
-<h2>What's in <span style="font-family: Apple Chancery, cursive">My Kitchen</span>...?</h2>
+<h2>What's in <span class="text-cursive">My Kitchen</span>...?</h2>
 
 <div>
       <% @items.each do |item| %>
         <div class="item-row" data-id="<%= item.id %>">
           <div><%= item.name %></div>
           <div><%= item.expiration_date %></div>
-          <div><%= item.item_type %></div>
         </div>
         <div class="action-row">
           <div><%= link_to 'Show', item %></div>
