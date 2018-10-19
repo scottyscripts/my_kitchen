@@ -1,8 +1,8 @@
 <div class="page-container">
 
 <div class="items-header">
-  <h2>In <span class="text-cursive">My Kitchen</span>...</h2>
-  <%= button_tag image_tag("help.png", size: "30x30"), class: 'btn-help', data: {toggle: 'tooltip', html: true, placement: 'left', title: '<p class="text-danger">Expires in <b>less than 3 days</b></p><p class="text-warning">Expires in <b>less than 7 days</b></p><p class="text-success">Expires <b>after 7 days</b></p>' } %>
+  <h2>In <span class="text-cursive">My Kitchen</span></h2>
+  <%= button_tag image_tag("help.png", size: "40x40"), class: 'btn-help', data: {toggle: 'tooltip', html: true, placement: 'left', title: '<p class="text-danger">Expires in <b>less than 3 days</b></p><p class="text-warning">Expires in <b>less than 7 days</b></p><p class="text-success">Expires <b>after 7 days</b></p>' } %>
 </div>
 
 <% @items.each do |item| %>
