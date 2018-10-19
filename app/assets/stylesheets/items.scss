@@ -6,29 +6,20 @@ div {
   font-size: 110%;
 }
 
-table.table-items tr.action-row {
-  display: none;
+.item-row:hover {
+  cursor: pointer;
 }
-
-div.item-row div:first-child {
-  font-size: 130%;
-  border-right: 2px solid black;
-  min-width: 40%;
-  padding-left: 30px;
-  margin-right: 10px;
-}
-
-div.item-row {
+.item-row {
   display: inline-flex;
   width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
-div.item-row div {
-  min-width: 33%;
+.item-row div {
   flex-grow: 1;
+  flex-basis: 0;
 }
 
-div.action-row {
+.action-row {
   display: none;
   width: 100%;
   margin: 10px 0 30px 0;
@@ -37,4 +28,12 @@ div.action-row div {
   min-width: 33%;
   flex-grow: 1;
   text-align: center;
+}
+
+.items-header > * {
+  display: inline-block;
+}
+
+.items-header button {
+  float: right;
 }
