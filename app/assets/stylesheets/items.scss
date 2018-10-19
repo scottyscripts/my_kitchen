@@ -6,6 +6,10 @@ div {
   font-size: 110%;
 }
 
+table.table-items tr.action-row {
+  display: none;
+}
+
 div.item-row div:first-child {
   font-size: 130%;
   border-right: 2px solid black;

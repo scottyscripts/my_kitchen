@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :item_type_id %>
+    <%= form.label :item_type_id %><br>
     <%= collection_select(:item, :item_type_id, ItemType.all, :id, :name, include_blank: true) %>
   </div>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name %><br>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :expiration_date %>
-    <%= form.date_select :expiration_date %>
+    <%= form.label :expiration_date %><br>
+    <%= form.date_select :expiration_date, order: [:month, :day, :year], default: nil, class: 'form-control' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-center">
+    <%= form.submit class: 'btn btn-primary'%>
   </div>
 <% end %>
