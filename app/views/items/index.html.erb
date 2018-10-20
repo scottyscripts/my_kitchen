@@ -7,7 +7,7 @@
 
 <% @items.each do |item| %>
   <div class="item-row" data-id="<%= item.id %>">
-    <div><%= item.name %></div>
+    <div><%= item_with_quantity(item) %></div>
     <%= colorized_expiration_date(item.expiration_date) %>
   </div>
   <div class="action-row">

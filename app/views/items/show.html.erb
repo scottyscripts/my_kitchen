@@ -3,6 +3,13 @@
   <%= @item.name %>
 </p>
 
+<% if @item.quantity > 1 %>
+  <p>
+    <strong>Quantity:</strong>
+    <%= @item.quantity %>
+  </p>
+<% end %>
+
 <p>
   <strong>Expiration date:</strong>
   <%= @item.expiration_date %>
