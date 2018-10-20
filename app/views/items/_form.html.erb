@@ -22,6 +22,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :quantity %><br>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="field">
     <%= form.label :expiration_date %><br>
     <%= form.date_select :expiration_date, order: [:month, :day, :year], default: nil, class: 'form-control' %>
   </div>
