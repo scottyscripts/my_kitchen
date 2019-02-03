@@ -69,3 +69,10 @@ gem 'pg'
 
 gem 'bundler-audit', '~> 0.4.0'
 gem 'brakeman', '~> 3.4'
+
+gem "nokogiri", ">= 1.8.5"
+
+gem "rack", ">= 2.0.6"
+
+gem "loofah", ">= 2.2.3"
+
