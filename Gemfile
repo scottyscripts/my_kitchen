@@ -66,3 +66,6 @@ gem 'bootstrap'
 gem 'jquery-rails'
 
 gem 'pg'
+
+gem 'bundler-audit', '~> 0.4.0'
+gem 'brakeman', '~> 3.4'
