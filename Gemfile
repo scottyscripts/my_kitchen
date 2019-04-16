@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.5.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.2.1'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -67,7 +67,7 @@ gem 'jquery-rails'
 
 gem 'pg'
 
-gem 'bundler-audit', '~> 0.4.0'
+gem 'bundler-audit', '~> 0.6.1'
 gem 'brakeman', '~> 3.4'
 
 gem "nokogiri", ">= 1.8.5"
@@ -75,4 +75,3 @@ gem "nokogiri", ">= 1.8.5"
 gem "rack", ">= 2.0.6"
 
 gem "loofah", ">= 2.2.3"
-
